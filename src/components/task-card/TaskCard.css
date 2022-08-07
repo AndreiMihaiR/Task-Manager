@@ -49,19 +49,7 @@
 .card-footer p {
     color: #B9B9B9;
 }
-.badge {
-    background-color: #F2F2F2;
-    padding: 5px 10px;
-    border-radius: 12px;
-}
 
-.badge > p {
-    margin: 0;
-    color: #808080;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 14px;
-}
 
 .card-date {
 display: flex;
