@@ -1,20 +1,25 @@
 import "./TaskCard.css";
 
 function taskCard () {
+    const taskId = "T-1";
+    const taskStatus = "Todo";
+    const taskName = "Create a Design System for Enum Workspace.";
+    const dueDate = new Date(2022, 7, 7);
+    
     return (<div className="card-wrapper">
         <div className="card-header">
-            <p className="task-id">T-1</p>
+            <p className="task-id">{taskId}</p>
             <div className="badge">
-                <p>Todo</p>
+                <p>{taskStatus}</p>
             </div>
         </div>
         <div className="card-content">
-            <p>Create a Design System for Enum Workspace.</p>
+            <p>{taskName}</p>
         </div>
         <div className="card-footer">
             <div className="card-date">
                 <p className="noMargin">Due Date</p>
-                <p className="noMargin">6/8/2022</p>
+                <p className="noMargin">{dueDate.toLocaleDateString()}</p>
             </div>
         </div>
     </div>)
