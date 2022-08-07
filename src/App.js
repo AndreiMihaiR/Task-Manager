@@ -1,11 +1,7 @@
 import "./App.css";
 import TaskCard from "./components/task-card/TaskCard";
 function App() {
-  // const id = "T-1";
-  // const status = "Todo";
-  // const name = "Create a Design System for Enum Workspace.";
-  // const dueDate = new Date(2022, 7, 7);
-
+  
   const data = [
     {
       id: "T-2",
