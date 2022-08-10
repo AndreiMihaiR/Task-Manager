@@ -5,7 +5,20 @@ function TaskViewer(props) {
   return (
     <div className="task-viewer-container">
       <div className="task-list-container">
-        <TaskCard
+        {
+          [
+            props.taskList.map((item, index ) =>
+            <TaskCard
+              key= {index}  // sau item.id
+              id={item.id}
+              status={item.status}
+              name={item.name}
+              dueDate={item.dueDate}
+            />
+            )
+          ]
+        }
+        {/* <TaskCard
           id={props.taskList[0].id}
           status={props.taskList[0].status}
           name={props.taskList[0].name}
@@ -28,7 +41,7 @@ function TaskViewer(props) {
           status={props.taskList[3].status}
           name={props.taskList[3].name}
           dueDate={props.taskList[3].dueDate}
-        />
+        /> */}
       </div>
     </div>
   );
