@@ -1,3 +1,4 @@
+import React from "react";
 import "./App.css";
 import TaskViewer from "./components/task-viewer/TaskViewer";
 
@@ -35,6 +36,12 @@ function App() {
     },
     {
       id: "T-6",
+      name: "Create a Design System for Enum Workspace.",
+      status: "Todo",
+      dueDate: new Date(2022, 5, 23),
+    },
+    {
+      id: "T-7",
       name: "Create a Design System for Enum Workspace.",
       status: "Todo",
       dueDate: new Date(2022, 5, 23),
